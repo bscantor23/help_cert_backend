@@ -1,0 +1,961 @@
+{
+	"info": {
+		"_postman_id": "ec857dcb-4bc0-430f-ad77-53eac326a7ee",
+		"name": "Api Help_Cert",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login - auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo\":\"genyuro@hotmail.com\",\r\n    \"clave\":\"asdf\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "credentials - auth",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\":\"asdf1\",\r\n    \"oldPassword\":\"asdf1234\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/credentials/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"credentials",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile - auth",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ciudad\":\"Bogotá D.C\",\r\n    \"telefono\":\"3126980070\",\r\n    \"direccion\":\"Kra 73 I No. 62 A 46 sur Apto 302 Galicia\",\r\n    \"correo\":\"bscantor@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/profile/232",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"profile",
+								"232"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "certificados",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "contratos",
+			"item": [
+				{
+					"name": "contratos - contratos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contratos (id) - contratos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contratos (documento_user) - contratos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/user/123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								"user",
+								"123456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create contrato - contratos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASSI\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"observaciones\":\"Instructor de WorldSkilss\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contrato (id) - contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASUSO\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deshabilitar contrato (id) - contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASS\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\",\r\n    \"created_at\":\"2020-11-20 00:00:00\",\r\n    \"updated_at\":\"2020-11-20 00:00:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/deshabilitar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								"deshabilitar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "habilitar contrato (id) - contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASS\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\",\r\n    \"created_at\":\"2020-11-20 00:00:00\",\r\n    \"updated_at\":\"2020-11-20 00:00:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/contratos/habilitar/213",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"contratos",
+								"habilitar",
+								"213"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tipo contratos",
+			"item": [
+				{
+					"name": "tipo_contratos - tipo_contratos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tipo_contratos (id) - tipo_contratos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/20201103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								"20201103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create tipo_contrato - tipo_contratos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"objeto_contrato\":\"test\",\r\n    \"obligaciones_especificas\":\"obligaciones\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update tipo_contrato (id) - tipo_contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"objeto_contrato\":\"test2\",\r\n    \"obligaciones_especificas\":\"obligaciones2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/20201118",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								"20201118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deshabilitar tipo_contrato (id) - tipo_contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASS\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\",\r\n    \"created_at\":\"2020-11-20 00:00:00\",\r\n    \"updated_at\":\"2020-11-20 00:00:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/deshabilitar/20201118",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								"deshabilitar",
+								"20201118"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "habilitar tipo_contrato (id) - tipo_contratos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASS\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\",\r\n    \"created_at\":\"2020-11-20 00:00:00\",\r\n    \"updated_at\":\"2020-11-20 00:00:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tipo_contratos/habilitar/20201118",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tipo_contratos",
+								"habilitar",
+								"20201118"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c439cb95-bd55-4316-9332-d25ad0ef54ba",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dad92fea-7f7c-4c41-8e4d-73d18cb1b720",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "infoForm",
+			"item": [
+				{
+					"name": "tipo documentos - infoForm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/infoForm/tipo-documentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"infoForm",
+								"tipo-documentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "certificados - infoForm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/infoForm/tipo-documentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"infoForm",
+								"tipo-documentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contratos - infoForm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/infoForm/tipo-documentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"infoForm",
+								"tipo-documentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios - infoForm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/infoForm/tipo-documentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"infoForm",
+								"tipo-documentos"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users - users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios - users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "teamControllers - users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admins - users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user (id) - users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user (id) - users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_documento\":4,\r\n    \"fk_rol_usuario\":3,\r\n    \"nombres\":\"Karen\",\r\n    \"apellidos\":\"Benitez\",\r\n    \"numero_documento\": \"123452\",\r\n    \"ciudad\":\"Bogotá D.C\",\r\n    \"correo\":\"karen6@gmail.com\",\r\n    \"cargo\":\"Gerente de Electricidad\",\r\n    \"direccion\":\"Kra 79 i n 62 a 46 sur\",\r\n    \"telefono\":\"3212042514\",\r\n    \"genero\":\"F\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user (id) - users",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_documento\":1,\r\n    \"fk_rol_usuario\":1,\r\n    \"nombres\":\"Karen\",\r\n    \"apellidos\":\"Benitez\",\r\n    \"numero_documento\": \"123456\",\r\n    \"ciudad\":\"Medellin\",\r\n    \"correo\":\"karen2@gmail.com\",\r\n    \"cargo\":\"Gerente de Electricidad y Telemática\",\r\n    \"direccion\":\"Kra 79 i n 62 a 46 sur\",\r\n    \"telefono\":\"3212042514\",\r\n    \"genero\":\"F\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deshabilitar user (id) - users",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_documento\":1,\r\n    \"fk_rol_usuario\":1,\r\n    \"nombres\":\"Karen\",\r\n    \"apellidos\":\"Benitez\",\r\n    \"numero_documento\": \"123456\",\r\n    \"ciudad\":\"Medellin\",\r\n    \"correo\":\"karen2@gmail.com\",\r\n    \"cargo\":\"Gerente de Electricidad y Telemática\",\r\n    \"direccion\":\"Kra 79 i n 62 a 46 sur\",\r\n    \"telefono\":\"3212042514\",\r\n    \"genero\":\"F\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "habilitar user (id) - users",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fk_tipo_contrato\":20201101,\r\n    \"fk_institucion\":1,\r\n    \"fk_funcionario\":1,\r\n    \"termino_ejecucion\":\"Un año\",\r\n    \"numero_contrato\": \"513412341ASS\",\r\n    \"fecha_inicio\":\"2020-11-20\",\r\n    \"fecha_final\":\"2021-11-20\",\r\n    \"salario\":3000000,\r\n    \"estado\":1,\r\n    \"observaciones\":\"Instructor de WorldSkilss\",\r\n    \"created_at\":\"2020-11-20 00:00:00\",\r\n    \"updated_at\":\"2020-11-20 00:00:00\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/habilitar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"habilitar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

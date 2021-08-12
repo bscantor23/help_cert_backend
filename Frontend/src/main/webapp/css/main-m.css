@@ -1,0 +1,140 @@
+/*Recordar que toda clase creada, debe colocarsele al final -m, example:  .container-m*/
+
+[type="checkbox"] {
+	display: none;
+}
+
+.label-m {
+	padding-left: 2em;
+	position: relative;
+}
+
+.label-m:before {
+	content: "";
+	border: solid 1px #9e9e9e;
+	border-radius: 3px;
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	left: 0px;
+	top: 0.08em;
+	transition: all 0.2s;
+	transform: rotate(0deg);
+}
+
+[type="checkbox"]:checked + .label-m:before {
+	border-color: #e84e0e;
+	color: #e84e0e;
+	content: "\f00c";
+	font-family: FontAwesome;
+	transform: rotate(360deg);
+	padding-left: 2.4px;
+}
+
+.table-m {
+	max-height: 360px;
+	max-width: 1200px;
+	overflow-y: auto;
+}
+
+.table-m thead th {
+	position: sticky;
+	top: -1px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.btn-default {
+	background-color: #e84e0e;
+}
+
+.container-info-m {
+	padding: 30px 30px;
+	width: 100%;
+}
+
+.cont-info-2-m {
+	width: 200px;
+}
+.scan-m {
+	height: 450px;
+	width: 450px;
+	margin-left: 180px;
+}
+
+.volver-m {
+	margin-left: 200px;
+}
+
+.return-button {
+	top: 0;
+	right: 0;
+}
+
+.panel-archivo {
+	border-radius: 4%;
+	background-color: #ebebeb;
+	height: 300px;
+	margin-top: 100px;
+}
+.panel-se {
+	background-color: #cccbcb;
+	border-radius: 5%;
+	margin: 10px 0px;
+}
+
+.uploadButton {
+	display: none;
+}
+
+.uploadLabel:visited,
+.uploadLabel:active {
+  background-color: aqua;
+  font-size: 40px;
+}
+
+.uploadLabel {
+  margin-top: 10px;
+	background-color: #fff;
+  padding: 10px !important;
+	width: 100%;
+	display: inline-block;
+	padding: 7px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.scroll-functions {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	max-height: 200px;
+}
+
+.img-finalize {
+	max-width: 450px;
+}
+
+.btn-ms {
+	margin-top: 70px;
+	margin-left: 215px;
+	justify-content: center;
+	width: 100px;
+	height: 40px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: transparent;
+	color: #ffff;
+}
+
+.archi-file {
+	margin-top: 50px;
+	margin-left: 80px;
+	font-size: 20px;
+}
+.felicidades-m {
+	margin-top: 100px;
+	margin-left: 400px;
+}

@@ -1,0 +1,296 @@
+/*Recordar que toda clase creada, debe colocarsele al final -d, example:  .container-d*/
+
+/* Works on Chrome, Edge, and Safari */
+.custom-scroll::-webkit-scrollbar {
+	width: 12px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+	background: rgb(231, 231, 231);
+	border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+	background-color: #e84e0e;
+	border-radius: 20px;
+}
+
+.breadcrumb-d {
+	margin-top: 50px;
+	padding-left: 60px;
+	background-color: #ffff;
+}
+
+.img_cert-d {
+	max-width: 330px;
+}
+
+.select1-d {
+	background-color: #ededed;
+	width: 350px;
+	border-radius: 20px;
+}
+.btn-d {
+	margin-top: 10px;
+	margin-left: 90px;
+	margin-right: 50px;
+	width: 140px;
+	display: flex;
+	justify-content: center;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: #e84e0e;
+	color: #ffff;
+}
+.form-control-d {
+	margin-top: 10px;
+	width: 300px;
+	height: 40px;
+	padding: 5px 20px;
+	background-color: #dbdbdb;
+	border-radius: 10px;
+	border: 0px;
+}
+
+.object-file {
+	width: 100%;
+	height: 100%;
+}
+
+.tipo-d {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.btn1-d {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 140px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: #e84e0e;
+	color: #ffff;
+}
+.btn-d2 {
+	width: 140px;
+	background-color: #e84e0e !important;
+	border-radius: 20px !important;
+	border-color: transparent;
+	color: #ffff !important;
+}
+.recupera-d {
+	background-color: #ededed;
+	max-width: 460px;
+	border-radius: 60px;
+}
+.ingresa-d {
+	font-size: 12px;
+	display: block;
+}
+.form-control-d2 {
+	background-color: #fff;
+	border-color: transparent;
+	width: 204px;
+}
+
+.img_cert-d1 {
+	max-width: 450px;
+}
+
+.container-info-d {
+	width: 100%;
+}
+
+.btn-d3 {
+	margin-top: 40px;
+	margin-left: 50px;
+	justify-content: center;
+	width: 140px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: transparent;
+	color: #ffff;
+}
+.container-info1-d {
+	padding: 10px 10px;
+	width: 100%;
+}
+
+.form-d {
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s;
+	outline: none;
+}
+
+textarea.form-d {
+	min-height: 100px;
+}
+
+.form-d:active {
+	border: none;
+}
+
+.form-obligaciones-d {
+	display: block;
+	width: 40%;
+	color: #212529;
+	height: 30px;
+	padding: 4px;
+	font-size: 13px;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s;
+}
+.linea-d1 {
+	background-color: #e84e0e !important;
+	height: 1px;
+}
+.icono-d {
+	background-color: #e84e0e;
+	border-radius: 100%;
+	border: 1x solid #e84e0e;
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	margin-top: 15px;
+}
+
+.icono-s-d {
+	background-color: #e84e0e;
+	border-radius: 100%;
+	border: 1x solid #e84e0e;
+	padding: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.icono-m-d {
+	background-color: #e84e0e;
+	border-radius: 100%;
+	border: 1x solid #e84e0e;
+	padding: 10px;
+	width: 40px;
+  margin-bottom: 15px;
+	height: 40px;
+}
+
+.iconos-d {
+	color: #fff;
+	font-size: 25px;
+}
+
+
+.iconos-s-d {
+	color: #fff;
+	font-size: 20px;
+}
+
+
+.scroll-cargos-d {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	max-height: 280px;
+}
+.btn-d4 {
+	width: 100px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: transparent;
+	color: #ffff;
+}
+
+.card-text-d {
+	font-size: 12px;
+}
+
+.card-title-d {
+	font-size: 14px;
+}
+
+.circle-d {
+	width: 40px !important;
+	height: 40px !important;
+}
+.card-d {
+	background-color: #ebebeb;
+	border-color: transparent;
+	border-radius: 30px;
+}
+.col-md-1 {
+	margin-left: 40px;
+}
+.foto-d {
+	width:110px;
+}
+.icon-d {
+	display: inline;
+	margin-left: 100px;
+}
+.scroll-d {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	height: 330px;
+	width: 100%;
+}
+.btn-d5 {
+	margin-top: 10px;
+	margin-left: 10px;
+	justify-content: center;
+	width: 140px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: transparent;
+	color: #ffff;
+}
+.card-body-d2 {
+	padding: 30px;
+}
+.card-title-d1 {
+	font-size: 10px;
+	margin: 3px;
+}
+.card-valor-d1 {
+	font-size: 15px;
+}
+.atras-d {
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+.btn-d7 {
+	margin-left: 50px;
+	height: 30px;
+	width: 140px;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: transparent;
+	color: #ffff;
+}
+.btn1-d0 {
+	margin-top: 10px;
+	margin-left: 90px;
+	margin-right: 50px;
+	width: 140px;
+	display: flex;
+	justify-content: center;
+	background-color: #e84e0e;
+	border-radius: 20px;
+	border-color: #e84e0e;
+	color: #ffff;
+	overflow: auto;
+}
+
+.text-size-1 {
+	font-size: 14px;
+}
+.img_cert-d5{
+	margin-left: 70px;
+}

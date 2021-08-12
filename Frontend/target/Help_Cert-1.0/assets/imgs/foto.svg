@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="74" height="74" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_600" data-name="Grupo 600" transform="translate(-364.5 -235.521)">
+    <g id="Cuadrícula_de_repetición_122" data-name="Cuadrícula de repetición 122" transform="translate(364.5 235.521)" clip-path="url(#clip-path)">
+      <g transform="translate(-364.5 -235.521)">
+        <circle id="Elipse_318" data-name="Elipse 318" cx="37" cy="37" r="37" transform="translate(364.5 235.521)" fill="rgba(0,0,0,0.21)"/>
+      </g>
+    </g>
+    <path id="ic_person_24px" d="M23.382,26.454c5.354,0,9.691-5.024,9.691-11.227S28.736,4,23.382,4s-9.691,5.024-9.691,11.227S18.028,26.454,23.382,26.454Zm0,5.614C16.913,32.068,4,35.829,4,43.3v5.614H42.764V43.3C42.764,35.829,29.851,32.068,23.382,32.068Z" transform="translate(379.235 243.546)"/>
+  </g>
+</svg>

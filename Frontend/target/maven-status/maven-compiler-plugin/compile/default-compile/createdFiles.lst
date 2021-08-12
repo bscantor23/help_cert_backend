@@ -1,0 +1,12 @@
+controllers\CertificateServlet.class
+controllers\FunctionaryServlet.class
+logics\ServletHandling.class
+controllers\ProfileServlet.class
+controllers\TeamControllerServlet.class
+logics\ServiceFactory.class
+controllers\HomeServlet.class
+controllers\JobFunctionsServlet.class
+logics\HttpConnection.class
+controllers\ContractServlet.class
+controllers\DashboardServlet.class
+controllers\HomePagesServlet.class
